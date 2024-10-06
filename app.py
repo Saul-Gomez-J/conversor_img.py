@@ -2,6 +2,65 @@ import streamlit as st
 from PIL import Image
 import io
 
+st.markdown(
+    """
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Saira:wght@100;300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+    /* Título del sitio */
+    .css-18e3th9 {
+        font-family: 'Saira', sans-serif;
+        font-weight: 500; /* Medium */
+        font-size: 30px;
+    }
+
+    /* Fuente del cuerpo */
+    .css-1d391kg {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 400; /* Regular */
+        font-size: 16px;
+    }
+
+    /* Fuente H1 */
+    h1 {
+        font-family: 'Saira', sans-serif;
+        font-weight: 400; /* Regular */
+        font-size: 36px;
+    }
+
+    /* Fuente H2 */
+    h2 {
+        font-family: 'Saira', sans-serif;
+        font-weight: 400; /* Regular */
+        font-size: 26px;
+    }
+
+    /* Fuente H3 */
+    h3 {
+        font-family: 'Saira', sans-serif;
+        font-weight: 400; /* Regular */
+        font-size: 22px;
+    }
+
+    /* Fuente H4 */
+    h4 {
+        font-family: 'Saira', sans-serif;
+        font-weight: 400; /* Regular */
+        font-size: 18px;
+    }
+
+    /* Fuente H5 */
+    h5 {
+        font-family: 'Saira', sans-serif;
+        font-weight: 400; /* Regular */
+        font-size: 16px;
+    }
+
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 def cargar_imagen():
     """Permite al usuario cargar una imagen."""
     uploaded_file = st.file_uploader("Elige una imagen...", type=["jpg", "jpeg", "png", "bmp", "gif", "webp"])
