@@ -2,6 +2,8 @@ import streamlit as st
 from PIL import Image
 import io
 
+st.set_page_config(page_title="🔄 Conversor de Imágenes", page_icon="🔄")
+
 st.markdown(
     """
     <style>
