@@ -1,0 +1,10 @@
+env
+*.log
+*.out
+*.err
+*.pyc
+*.pyo
+*.pyd
+*.pyx
+*.pxd
+*.pxi
