@@ -2,8 +2,10 @@ import streamlit as st
 from PIL import Image
 import io
 
+# Mueve `st.set_page_config` como la primera instrucción de Streamlit en el script
 st.set_page_config(page_title="🔄 Conversor de Imágenes", page_icon="🔄")
 
+# Configuración de estilos
 st.markdown(
     """
     <style>
@@ -89,7 +91,6 @@ def convertir_imagen(imagen, formato):
         return buffer.getvalue()
 
 def main():
-    st.set_page_config(page_title="🔄 Conversor de Imágenes", page_icon="🔄")
     st.title("🔄 Conversor de Imágenes")
     st.write("Carga una imagen, selecciona el formato de destino y descarga la imagen convertida.")
 
